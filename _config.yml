@@ -1,0 +1,49 @@
+# Jekyll config
+#
+# Site settings
+title: Scytto
+tagline: Web Design Inspiration
+description: >
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Voluptatibus magni voluptates dolorum totam expedita
+  asperiores dolorem laudantium ipsa et, quod rerum? Error
+  repudiandae asperiores perferendis qui neque hic fugit repellat!
+baseurl: ""
+url: "http://scytto.com"
+timezone: Asia/Manila
+theme:
+
+# Build settings
+markdown: kramdown
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+    style: expanded
+    deploy_style: compressed
+plugins:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-avatar
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-github-metadata
+
+include:
+    - .htaccess
+exclude:
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - .gitignore
+    - .sass-cache
+    - node_modules
+    - package.json
+    - gulpfile.js
+    - LICENSE
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: pretty
+
+paginate: 10
